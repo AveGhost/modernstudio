@@ -3,8 +3,8 @@ import NavigationListWrapper from "./navigation-list/navigation-list-wrapper.com
 
 const Navigation = () => {
     return (
-      <nav className="flex justify-between items-center p-4">
-        <Image src="/Logo.svg" alt="Logo" width={96} height={96} />
+      <nav className="flex justify-between items-center relative p-4">
+        <Image src="/Logo.png" alt="Logo" width={96} height={96} className="z-40" />
         <NavigationListWrapper />
       </nav>
     )
