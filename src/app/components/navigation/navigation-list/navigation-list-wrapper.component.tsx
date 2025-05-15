@@ -9,7 +9,7 @@ import SocialIcons from "../../socials/social.compoenent"
 const Links = [
     {
         name: "Oferty",
-        href: "/"
+        href: "oferty"
     },
     {
         name: "Realizacje",
