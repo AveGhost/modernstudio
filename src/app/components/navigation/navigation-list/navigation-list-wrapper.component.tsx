@@ -27,7 +27,7 @@ const Links = [
 const NavigationListWrapper = () => {
     return (
         <ul className="flex items-center gap-4">
-            {Links.map((link,index) => <NavigationListElement key={index} href={link.href} name={link.name} />)}
+            {Links.map((link,index) => <NavigationListElement key={index} href={link.href} name={link.name} classes="px-4" />)}
             <Image src="/icons/social/facebook.svg" alt="Facebook" width={24} height={24} className="mx-4" />
             <Image src="/icons/social/instagram.svg" alt="Instagram" width={24} height={24} className="mx-4" />
         </ul>
