@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <>
     <head>
-      <link rel="icon" href="/Logo.svg" />
+      <link rel="icon" href="/Logo.png" />
     </head>
     <html lang="en">
       <body
