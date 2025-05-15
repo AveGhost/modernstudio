@@ -1,5 +1,4 @@
 const DesignArrow = ({direction, borderColor} : {direction: string, borderColor: string}) => {
-    console.log(borderColor)
     const desiginArrowDirection = (direction: string) => {
         if (direction === 'top-right') {
             return '-top-10 -right-10 border-t-25 border-r-25'
