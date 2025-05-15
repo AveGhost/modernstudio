@@ -1,15 +1,14 @@
-import Navigation from "./components/navigation/navigation.component";
 import Image from "next/image";
 import DesignArrow from "./components/design-arrow/design-arrow.component";
 import LinkButton from "./components/button/link-button.component";
 import HighlightHeading from "./components/highlight-heading/highlight-heading.component";
 import LinkWithIcon from "./components/link-with-icon/link-with-icon.component";
 import ShortInfoBox from "./components/short-info-box/short-info-box.component";
+import Button from "./components/button/button.component";
 
 export default function Home() {
   return (
-    <div className="container mx-auto">
-      <Navigation />
+    <main>
       <div className="grid grid-cols-[auto_1fr] place-items-center">
         <div className="p-5 bg-[#fff]/80 -mr-32 z-10">
           <h1 className="text-5xl">Biuro nieruchomości,<br/> którego potrzebujesz</h1>
@@ -24,7 +23,7 @@ export default function Home() {
           <Image src="/home/obsluga_nieruchomosci.jpg" alt="Photo" fill className="object-cover" />
           <DesignArrow direction="bottom-left" borderColor="#E0D5D2" />
         </div>
-        <div className="absolute z-10 top-[40%] right-15 max-w-[540px] justify-self-end">
+        <div className="absolute z-10 top-[38%] right-0 max-w-[540px] justify-self-end">
           <DesignArrow direction="top-right" borderColor="#4E8074" />
           <div className="p-16 bg-[#4E8074] z-10 text-white flex flex-col justify-center items-center w-fit gap-10">
             <h2 className="text-[42px] font-medium">Obsługę nieruchomości<br /> wymyśliliśmy na nowo</h2>
@@ -34,7 +33,7 @@ export default function Home() {
         </div>
       </div>
       <section className="pb-40">
-        <HighlightHeading fontSize="50px" classes="mx-auto mb-25" isRight>Dlaczego szukasz właśnie nas?</HighlightHeading>
+        <HighlightHeading fontSize="50px" classes="mx-auto mb-25" highLightWidth="280px" isRight>Dlaczego szukasz właśnie nas?</HighlightHeading>
         <div className="flex justify-between items-center gap-10">
           <ShortInfoBox heading="Kompleksowa obsługa">
             <p>Kupujesz, sprzedajesz lub chcesz wynająć nieruchomość? Zajmiemy się Twoją sprawą od A do Z, aby zaoszczędzić Twój czas.</p>
@@ -72,7 +71,7 @@ export default function Home() {
       </section>
       <section className="pb-40">
         <div className="grid grid-cols-2 mb-10">
-          <HighlightHeading fontSize="50px" classes="leading-[1.2]">Twój komfort ponad<br/> wszystko</HighlightHeading>
+          <HighlightHeading fontSize="50px" highLightWidth="285px" classes="leading-[1.2]">Twój komfort ponad<br/> wszystko</HighlightHeading>
           <p>To, co dla innych biur nieruchomości wykracza poza<br/> zakres usług, dla nas jest standardem. Wyróżnia nas<br/> bezkompromisowa troska o interes klienta.</p>
         </div>
         <LinkWithIcon href="/">Sprawdź pełen zakres naszych usług</LinkWithIcon>
@@ -94,7 +93,7 @@ export default function Home() {
       <section className="pb-40">
         <div className="grid grid-cols-2 grid-rows-2 gap-10">
           <div className="flex flex-col gap-10">
-            <HighlightHeading fontSize="50px" isRight>Poznaj nasz zespół</HighlightHeading>
+            <HighlightHeading fontSize="50px" highLightWidth="240px" isRight>Poznaj nasz zespół</HighlightHeading>
             <p>Dzięki doskonałej współpracy i przyjacielskiej atmosferze<br/> udało nam się stworzyć zespół doskonały.</p>
             <LinkWithIcon href="/">Sprawdź, kim jesteśmy</LinkWithIcon>
           </div>
@@ -121,11 +120,19 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col w-full gap-8">
-            <HighlightHeading fontSize="50px" classes="leading-[1.2]">Co mówią o nas<br/> nasi klienci?</HighlightHeading>
+            <HighlightHeading fontSize="50px" highLightWidth="240px" classes="leading-[1.2]">Co mówią o nas<br/> nasi klienci?</HighlightHeading>
             <p>Bezkompromisowo wspieramy naszych klientów a ich<br/> satysfakcja jest dla nas najważniejszym celem.</p>
           </div>
         </div>
       </section>
-    </div>
+      <section className="pb-40">
+        <HighlightHeading fontSize="50px" highLightWidth="180px" classes="mx-auto mb-9">Napisz do nas</HighlightHeading>
+        <form className="flex flex-col mx-auto max-w-[400px] gap-4">
+          <input type="email" name="email" id="email" placeholder="Adres e-mail" className="border-[#444C54] border-1 p-2" />
+          <textarea name="message" id="message" placeholder="Wiadomość" className="border-[#444C54] border-1 p-2 min-h-[220px]" />
+          <Button type="submit" classes="mx-auto min-w-[140px] text-[12px] font-medium">Wyślij</Button>
+        </form>
+      </section>
+    </main>
   );
 }
