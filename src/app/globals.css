@@ -20,3 +20,29 @@ h5,
 h6 {
   font-family: var(--font-cormorant-garamond);
 }
+
+.slick-dots li button:before {
+  color: #fff!important;
+  font-size: 10px!important;
+}
+
+.slick-dots {
+  bottom: 10px!important;
+}
+
+.slick-dots li {
+  width: 7px!important;
+}
+
+.slick-next::before,.slick-prev::before {
+  display: none;
+}
+
+.slick-next {
+  right: 20px!important;
+}
+
+.slick-prev {
+  left: 5px!important;
+  z-index: 1;
+}
