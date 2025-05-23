@@ -39,11 +39,9 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${cormorantGaramond.variable} ${inter.variable} antialiased`}
       >
-        <div className="max-w-[1270px] mx-auto">
-          <Navigation />
-          {children}
-          <Footer />
-        </div>
+        <Navigation />
+        {children}
+        <Footer />
       </body>
     </html>
     </>
