@@ -9,7 +9,7 @@ const Navigation = () => {
   const pathname = usePathname();
   const home = pathname === "/"
     return (
-      <nav className="flex justify-between items-center relative p-4">
+      <nav className="flex justify-between items-center relative p-4 max-w-[1270px] mx-auto">
         {home ? <Image src="/Logo.png" alt="Logo" width={96} height={96} className="z-40" />
         : <Link href="/"><Image src="/Logo.png" alt="Logo" width={96} height={96} className="z-40" /></Link>}
         <NavigationListWrapper />

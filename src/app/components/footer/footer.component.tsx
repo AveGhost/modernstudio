@@ -3,7 +3,7 @@ import NavigationListElement from "../navigation/navigation-list/navigation-list
 
 const Footer = () => {
     return (
-        <footer className="pb-14 px-5 grid grid-cols-2 gap-6 md:block md:gap-0 items-center">
+        <footer className="pb-14 px-5 grid grid-cols-2 gap-6 md:block md:gap-0 items-center max-w-[1270px] mx-auto">
             <p className="!font-[family-name:var(--font-inter)] font-bold md:mb-8">Modren studio</p>
             <ul className="grid grid-cols-2 md:grid-cols-3 gap-2 col-span-2">
                 <NavigationListElement href="/" name="Oferty" />
