@@ -9,15 +9,15 @@ import SocialIcons from "../../socials/social.compoenent"
 const Links = [
     {
         name: "Oferty",
-        href: "oferty"
+        href: "/oferty"
     },
     {
         name: "Realizacje",
-        href: "/"
+        href: "/realizacje"
     },
     {
         name: "Zespoł",
-        href: "/"
+        href: "/zespol"
     },
     {
         name: "Usługi",
