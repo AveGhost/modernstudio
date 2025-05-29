@@ -87,7 +87,7 @@ export default function Home() {
           <div className="flex flex-col md:grid w-full gap-10 md:grid-cols-2 mb-10">
             <HighlightHeading fontSize="50px" highLightWidth="285px" classes="leading-[1.2] order-1">Twój komfort<br/> ponad wszystko</HighlightHeading>
             <p className="order-3 md:order-2">To, co dla innych biur nieruchomości wykracza poza<br/> zakres usług, dla nas jest standardem. Wyróżnia nas<br/> bezkompromisowa troska o interes klienta.</p>
-            <LinkWithIcon href="/" classes="order-2 col-span-2 md:order-3">Sprawdź pełen zakres naszych usług</LinkWithIcon>
+            <LinkWithIcon href="/uslugi" classes="order-2 col-span-2 md:order-3">Sprawdź pełen zakres naszych usług</LinkWithIcon>
           </div>
           <div className="flex flex-wrap lg:flex-nowrap items-center gap-10 mt-11 md:mt-31">
             <ShortInfoBox heading="Pośrednictwo">
@@ -110,7 +110,7 @@ export default function Home() {
               <HighlightHeading fontSize="50px" highLightWidth="240px" isRight classes="hidden md:block">Poznaj nasz zespół</HighlightHeading>
               <HighlightHeading fontSize="50px" highLightWidth="240px" classes="md:hidden block">Poznaj nasz zespół</HighlightHeading>
               <p>Dzięki doskonałej współpracy i przyjacielskiej atmosferze<br/> udało nam się stworzyć zespół doskonały.</p>
-              <LinkWithIcon href="/">Sprawdź, kim jesteśmy</LinkWithIcon>
+              <LinkWithIcon href="/zespol">Sprawdź, kim jesteśmy</LinkWithIcon>
             </div>
             <div className="relative w-full h-full aspect-square row-span-2">
               <Image src="/home/nasz_zespol_1.jpg" alt="Photo" fill className="w-full object-cover" />
