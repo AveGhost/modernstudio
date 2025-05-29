@@ -4,30 +4,9 @@ import NavigationListElement from "./navigation-list-element.component"
 import Image from "next/image"
 import { Icon } from "@iconify/react/dist/iconify.js"
 import { useState } from "react"
-import SocialIcons from "../../socials/social.compoenent"
+import SocialIcons from "../../socials/social.component"
+import { Links } from "@/data/links"
 
-const Links = [
-    {
-        name: "Oferty",
-        href: "/oferty"
-    },
-    {
-        name: "Realizacje",
-        href: "/realizacje"
-    },
-    {
-        name: "Zespoł",
-        href: "/zespol"
-    },
-    {
-        name: "Usługi",
-        href: "/"
-    },
-    {
-        name: "Kontakt",
-        href: "/"
-    }
-]
 
 const NavigationListWrapper = () => {
     const [isOpen, setIsOpen] = useState(false)
