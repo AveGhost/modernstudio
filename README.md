@@ -1,3 +1,6 @@
+## ModernStudio
+this is created front based on figma only for practise (not commercally) -> https://www.figma.com/design/18Gc5vaBeL8QKoMKWOARN9/Modern-Studio-–-Kurs--Copy-?node-id=570-707&t=SacVDPi7SjFYAZTr-0
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
