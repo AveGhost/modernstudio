@@ -1,21 +1,20 @@
-import Image from "next/image"
-import NavigationListElement from "../navigation/navigation-list/navigation-list-element.component"
+'use client'
 
+import NavigationListElement from "../navigation/navigation-list/navigation-list-element.component"
+import { Links } from "@/data/links"
+import SocialIcons from "../socials/social.component"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 const Footer = () => {
+    const pathname = usePathname();
+    const home = pathname === "/"
     return (
         <footer className="pb-14 px-5 grid grid-cols-2 gap-6 md:block md:gap-0 items-center max-w-[1270px] mx-auto">
-            <p className="!font-[family-name:var(--font-inter)] font-bold md:mb-8">Modren studio</p>
+            <Link href={home ? "#" : "/"} className="!font-[family-name:var(--font-inter)] block w-fit font-bold md:mb-8">Modren studio</Link>
             <ul className="grid grid-cols-2 md:grid-cols-3 gap-2 col-span-2">
-                <NavigationListElement href="/" name="Oferty" />
-                <NavigationListElement href="/" name="Zespół" />
-                <NavigationListElement href="/" name="Kontakt" />
-                <NavigationListElement href="/" name="Realizacje" />
-                <NavigationListElement href="/" name="Usługi" />
+                {Links.map(link => <NavigationListElement key={link.name} href={link.href} name={link.name} />)}
             </ul>
-            <div className="flex items-center ml-auto col-2 row-1 md:ml-0 md:justify-end lg:-mr-15">
-                <Image src="/icons/social/facebook.svg" alt="Facebook" width={32} height={32} className="mx-4" />
-                <Image src="/icons/social/instagram.svg" alt="Instagram" width={32} height={32} className="mx-4" />
-            </div>
+            <SocialIcons classes="items-center ml-auto col-2 row-1 md:ml-0 md:justify-end lg:-mr-15" />
         </footer>
     )
 }
