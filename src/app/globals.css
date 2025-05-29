@@ -4,6 +4,7 @@ body {
   background: #fff;
   color: #222;
   font-family: var(--font-montserrat);
+  scroll-behavior: smooth;
 }
 
 p,
@@ -45,4 +46,29 @@ h6 {
 .slick-prev {
   left: 5px!important;
   z-index: 1;
+}
+
+.icon-gradient {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.icon-gradient,
+.icon-base {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  will-change: opacity;
+}
+
+svg:hover .icon-gradient {
+  opacity: 1;
+}
+
+svg:hover .icon-base {
+  opacity: 0;
 }
